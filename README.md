@@ -21,14 +21,3 @@ For each unique point ID, the plugin maintains and updates the following statist
 
 - **Standard Deviation (`stdDev`)**: A measure of the amount of variation or dispersion of the set of values. A low standard deviation indicates that the values tend to be close to the mean of the set, while a high standard deviation indicates that the values are spread out over a wider range.
 
-## Who is it for?
-
-The Statistics Plugin is designed for anyone dealing with real-time analysis of time-series data. This could include Data Scientists, Analysts, Software Engineers, or any other roles where real-time data analysis is needed.
-
-Whether you're trying to understand patterns in user behavior, track changes over time, identify anomalies, or make data-informed decisions, the Statistics Plugin provides a robust and efficient solution for analyzing your streaming metrics data.
-
-Please note that while the plugin continually updates the statistics as new data arrives, it does not retain all historical data points. This ensures that the memory usage is constant and does not grow with the number of data points processed, making the plugin both efficient and scalable.
-
-```bash
-go build -gcflags="all=-N -l" -o stats-debug.so -buildmode=plugin
-```
